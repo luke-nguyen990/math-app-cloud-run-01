@@ -10,8 +10,8 @@ def dumpdb():
     subprocess.call(cmd, shell=True)
     cmd = "gsutil cp / tmp/schema.sql gs: // math-app-transfer"
     subprocess.call(cmd, shell=True)
-    return
+    return "OK"
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=8080)
